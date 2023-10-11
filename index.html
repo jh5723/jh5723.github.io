@@ -1,59 +1,18 @@
-
-
 <!DOCTYPE html>
-
 <html>
+    <head>
+        <title>Welcome to my simple web page</title>
+	<title color>
+    </head>
+    	<BODY BGCOLOR="#FF0000">
 
-<head>
+	<H1>This background is RED</H1>
 
-<title>Number Guessing Game</title>
+	<H1><FONT COLOR=white>The text is white</H1>
 
-</head>
-
-<body>
-
-<h1>Welcome to the Number Guessing Game!</h1>
-
-<p>Can you guess the random number between 1 and 100?</p>
-
-<input type="number" id="guess" min="1" max="100">
-
-<button onclick="checkGuess()">Submit Guess</button>
-
-<p id="message"></p>
-
-<script>
-
-// Generate a random number between 1 and 100
-
-var randomNumber = Math.floor(Math.random() * 100) + 1;
-
-var attempts = 0;
-
-function checkGuess() {
-
-var guess = parseInt(document.getElementById("guess").value);
-
-attempts++;
-
-if (guess === randomNumber) {
-
-document.getElementById("message").textContent = "Congratulations! You guessed the number in " + attempts + " attempts.";
-
-} else if (guess < randomNumber) {
-
-document.getElementById("message").textContent = "Try higher.";
-
-} else {
-
-document.getElementById("message").textContent = "Try lower.";
-
-}
-
-}
-
-</script>
-
-</body>
-
+	<H1><FONT COLOR="#FFFF99">The text is yellow</FONT></H1>
+    <body>
+        <p>This is my simple html page.</p>
+    </body>
 </html>
+
